@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body class="2xl:max-w-screen-2xl 2xl:mx-auto bg-black text-white">
+    <header class="p-6 md:p-10">
+      <nav class="md:p-2 flex justify-between">
+        <a
+          class="md:text-lg hover:underline md:animate-infinite-typewriter overflow-hidden whitespace-nowrap"
+          href="index.html"
+          >⚪ OMOTAYO</a
+        >
+
+        <div class="space-x-1 md:space-x-8">
+          <a class="underline" href="about.html">about me</a>
+          <a
+            class="border px-4 py-2 rounded-full shadow-md shadow-white"
+            href="mycv/OMOTAYO DANIEL O CV^.pdf"
+            >Download CV</a
+          >
+        </div>
+      </nav>
+
+      <section class="mt-10 space-x-12">
+        <div class="flex flex-col md:flex-row">
+          <div class="flex flex-col md:items-start">
+            <figure class="size-30 relative">
+              <img src="assets/Photoroom.png" alt="" />
+            </figure>
+            <figure class="hidden md:block relative left-15">
+              <img class="h-[120%]" src="assets/Line 3.png" alt="" />
+            </figure>
+          </div>
+          <div class="md:w-[60%] md:mx-auto flex flex-col space-y-4">
+            <h2 class="mt-5 md:mt-6 text-4xl font-semibold md:text-7xl">
+              Let me tell you a little bit about me
+            </h2>
+
+            <p class="text-[#FFFFFF66] *:text-white">
+              Hello. I'm Omotayo a talented frontend developer from Lagos,
+              Nigeria with a strong command of
+              <span>HTML, CSS, and JavaScript</span>, the foundational building
+              blocks of web development. i'm Passionate about creating visually
+              appealing and user-friendly interfaces, I specializes in
+              translating ideas and designs into functional, interactive web
+              experiences.
+            </p>
+            <h2 class="text-2xl font-semibold">Key Skills:</h2>
+            <ul class="list-disc text-[#FFFFFF66] pl-4 space-y-4">
+              <li class="*:text-white *:text-lg">
+                <span>HTML</span> : I craft well-structured and semantic markup
+                to ensure accessible and SEO-friendly web pages.
+              </li>
+              <li class="*:text-white *:text-lg">
+                <span>Tailwind CSS</span> : I design responsive layouts, styling
+                components, and implementing animations to bring websites to
+                life.
+              </li>
+              <li class="*:text-white *:text-lg">
+                <span>JavaScript</span> : Also i bring about interactivity and
+                functionality, such as dynamic forms, navigation menus, and
+                engaging user interactions.
+              </li>
+              <li class="*:text-white *:text-lg">
+                <span>React</span> : I have hands-on experience with React,
+                building responsive and interactive user interfaces using
+                components, hooks, and state management. I'm comfortable working
+                with JSX, props, conditional rendering, and integrating APIs to
+                create dynamic applications.
+              </li>
+            </ul>
+
+            <p class="text-[#FFFFFF66]"></p>
+
+            <p class="text-[#FFFFFF66]">
+              I stay updated on the latest frontend trends and best practices,
+              ensuring the delivery of modern and scalable web solutions.
+              Whether working independently or as part of a collaborative team,
+              i thrives in creating projects that delight users and meet
+              business goals. I'm Always eager to learn and grow, i combines
+              technical expertise with a creative approach to build websites
+              that not only look great but also provide seamless performance
+              across devices.
+            </p>
+
+            <p class="text-[#FFFFFF66]">
+              I'm passionate about building exceptional web experiences and
+              currently open to new opportunities. Whether you have an exciting
+              project in mind, need help with frontend development, or want to
+              discuss potential collaborations, I'd love to hear from you. Let's
+              create something amazing together! 📧 Contact me at :
+              oshiboteomotayo100@gmail.com Tech stack: HTML5, CSS3, JavaScript,
+              React.js, Tailwind. Available for: Full-time roles, Freelance
+              projects, Technical consulting and so on. Let's turn your ideas
+              into reality! Currently AVAILABLE for new opportunities..
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- .........My work section........ -->
+
+      <section class="p-6 md:p-10">
+        <div class="w-[90%] mx-auto">
+          <div
+            class="flex items-center space-x-2 rounded-full border px-4 py-2 justify-self-start"
+          >
+            <h2 class="text-md">View My Works</h2>
+            <figure>
+              <img class="w-10" src="assets/Line 4.png" alt="" />
+            </figure>
+          </div>
+
+          <div class="grid gap-6 mt-8 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Project Card -->
+            <div
+              class="project-card border cursor-pointer rounded-md overflow-hidden shadow-md shadow-white hover:scale-110 transition-transform duration-300"
+              data-title="Photographer"
+              data-image="assets/thumbnail.jpg"
+              data-description="A sleek and modern photographer portfolio website showcasing stunning visuals, client testimonials, and service offerings."
+              data-live="https://piuss.netlify.app/"
+              data-code="https://github.com/OMOTAYO100/photography-pius"
+            >
+              <img
+                src="assets/thumbnail.jpg"
+                alt="Photographer Project"
+                class="w-full h-auto"
+              />
+            </div>
+
+            <div
+              class="project-card border cursor-pointer rounded-md overflow-hidden shadow-md hover:scale-110 transition-transform duration-300"
+              data-title="Portfolio"
+              data-image="assets/My-portfolio-screenshot.png"
+              data-description="A personal portfolio website showcasing my frontend development projects, design skills, and a bit about me. Built with modern UI practices, smooth animations, and responsive layouts to provide an engaging experience across all devices."
+              data-live="https://omotayo-daniel.netlify.app/"
+              data-code="https://github.com/your-repo"
+            >
+              <img
+                src="assets/My-portfolio-screenshot.png"
+                alt="Photographer Project"
+                class="w-full h-auto"
+              />
+            </div>
+            <!-- Duplicate this block for more projects -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal -->
+      <div
+        id="projectModal"
+        class="fixed inset-0 z-50 hidden bg-black/50 flex items-center justify-center"
+      >
+        <div
+          class="bg-white text-black p-8 rounded-md max-w-lg w-full relative"
+        >
+          <button
+            onclick="closeModal()"
+            class="absolute top-1 right-2 text-2xl font-bold"
+          >
+            &times;
+          </button>
+          <img id="modalImage" src="" class="w-full mb-4 rounded" />
+          <h3 id="modalTitle" class="text-xl font-bold mb-2"></h3>
+          <p id="modalDescription" class="mb-4"></p>
+          <div class="flex gap-4">
+            <a
+              id="Demo"
+              href="#"
+              target="_blank"
+              class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+              >Demo</a
+            >
+            <a
+              id="Code"
+              href="#"
+              target="_blank"
+              class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900"
+              >Code</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
