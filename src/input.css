@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme {
+/* @theme {
   --animate-infinite-typewriter: infiniteTypewriter 6s linear infinite;
   --animate-infinite-type: infiniteType 10s linear infinite;
   --animate-slide-right: slide-right 5s ease-out;
@@ -31,4 +31,76 @@
     0%, 100% { transform: rotate(-1deg); }
     50% { transform: rotate(1deg); }
   }
+} */
+
+@theme {
+  --animate-infinite-typewriter: infiniteTypewriter 6s linear infinite;
+  --animate-infinite-type: infiniteType 10s linear infinite;
+  --animate-slide-right: slide-right 5s ease-out;
+  --animate-wiggle: wiggle 3s ease-in-out infinite;
+
+  @keyframes infiniteTypewriter {
+    0% {
+      width: 0;
+    }
+    40% {
+      width: 10%;
+    }
+    60% {
+      width: 10%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+
+  @keyframes infiniteType {
+    0% {
+      width: 0%;
+    }
+    40% {
+      width: 100%;
+    }
+    60% {
+      width: 100%;
+    }
+    100% {
+      width: 0%;
+    }
+  }
+
+  @keyframes slide-right {
+    from {
+      transform: scaleX(0);
+      transform-origin: left;
+    }
+    to {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-1deg);
+    }
+    50% {
+      transform: rotate(1deg);
+    }
+  }
+}
+
+.animate-slide-right {
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: none;
+}
+
+.section-trigger:hover + div .animate-slide-right {
+    animation: slide-right 5s ease-out forwards;
+}
+
+.section-trigger:not(:hover) + div .animate-slide-right {
+    transition: transform 0.3s ease-out;
 }

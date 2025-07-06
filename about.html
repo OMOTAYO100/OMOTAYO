@@ -32,7 +32,7 @@
               <img src="assets/Photoroom.png" alt="" />
             </figure>
             <figure class="hidden md:block relative left-15">
-              <img class="h-[120%]" src="assets/Line 3.png" alt="" />
+              <img class="h-[170%]" src="assets/Line 3.png" alt="" />
             </figure>
           </div>
           <div class="md:w-[60%] md:mx-auto flex flex-col space-y-4">
@@ -150,7 +150,7 @@
 
             <div
               class="project-card border cursor-pointer rounded-md overflow-hidden shadow-md hover:scale-110 transition-transform duration-300"
-              data-title="Portfolio"
+              data-title="Finance"
               data-image="assets/Finace-website-screenshot.png"
               data-description="FFA is a modern finance website I built featuring both light and dark themes. It offers a clean, responsive interface designed to enhance user experience while showcasing financial tools, insights, and services."
               data-live="https://ffa-finance.netlify.app/"
@@ -165,7 +165,7 @@
 
             <div
               class="project-card border cursor-pointer rounded-md overflow-hidden shadow-md hover:scale-110 transition-transform duration-300"
-              data-title="Portfolio"
+              data-title="Footwear"
               data-image="assets/Sneakers-wesite-screenshot.png"
               data-description="A small yet fully functional e-commerce website designed to showcase and sell products with a smooth user experience. Features include a responsive layout, product listings, shopping cart functionality, and a clean modern UI."
               data-live="https://ssneakkers.netlify.app/"
@@ -264,6 +264,36 @@
           </div>
         </div>
       </footer>
+<!-- Modal -->
+<div
+  id="projectModal"
+  class="fixed inset-0 z-50 hidden bg-black/50 flex items-center justify-center"
+>
+  <div class="bg-white text-black p-8 rounded-md max-w-lg w-full relative">
+    <button onclick="closeModal()" class="absolute top-1 right-2 text-2xl font-bold">
+      &times;
+    </button>
+    <img id="modalImage" src="" class="w-full mb-4 rounded" />
+    <h3 id="modalTitle" class="text-xl font-bold mb-2"></h3>
+    <p id="modalDescription" class="mb-4"></p>
+    <div class="flex gap-4">
+      <a
+        id="Demo"
+        href="#"
+        target="_blank"
+        class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+        >Demo</a
+      >
+      <a
+        id="Code"
+        href="#"
+        target="_blank"
+        class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900"
+        >Code</a
+      >
+    </div>
+  </div>
+</div>
 
     <script src="./app.js"></script>
   </body>

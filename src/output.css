@@ -278,8 +278,8 @@
     width: calc(var(--spacing) * 40);
     height: calc(var(--spacing) * 40);
   }
-  .h-\[120\%\] {
-    height: 120%;
+  .h-\[170\%\] {
+    height: 170%;
   }
   .h-auto {
     height: auto;
@@ -866,6 +866,17 @@
       max-width: var(--breakpoint-2xl);
     }
   }
+}
+.animate-slide-right {
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: none;
+}
+.section-trigger:hover + div .animate-slide-right {
+  animation: slide-right 5s ease-out forwards;
+}
+.section-trigger:not(:hover) + div .animate-slide-right {
+  transition: transform 0.3s ease-out;
 }
 @property --tw-space-y-reverse {
   syntax: "*";
