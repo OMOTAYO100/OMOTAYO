@@ -16,7 +16,7 @@
         >
 
         <div class="space-x-1 md:space-x-8">
-          <a class="underline" href="about.html">about me</a>
+          <a class="underline" href="#contact">Contact me</a>
           <a
             class="border px-4 py-2 rounded-full shadow-md shadow-white"
             href="mycv/OMOTAYO DANIEL O CV^.pdf"
@@ -115,9 +115,9 @@
               <img class="w-10" src="assets/Line 4.png" alt="" />
             </figure>
           </div>
-
+          <!-- Project Card -->
           <div class="grid gap-6 mt-8 md:grid-cols-2 lg:grid-cols-3">
-            <!-- Project Card -->
+            <!-- First-Project -->
             <div
               class="project-card border cursor-pointer rounded-md overflow-hidden shadow-md shadow-white hover:scale-110 transition-transform duration-300"
               data-title="Photographer"
@@ -132,7 +132,7 @@
                 class="w-full h-auto"
               />
             </div>
-
+            <!-- Second-Project -->
             <div
               class="project-card border cursor-pointer rounded-md overflow-hidden shadow-md hover:scale-110 transition-transform duration-300"
               data-title="Portfolio"
@@ -147,7 +147,7 @@
                 class="w-full h-auto"
               />
             </div>
-
+            <!-- third-Project -->
             <div
               class="project-card border cursor-pointer rounded-md overflow-hidden shadow-md hover:scale-110 transition-transform duration-300"
               data-title="Finance"
@@ -162,7 +162,7 @@
                 class="w-full h-auto"
               />
             </div>
-
+            <!-- Fourth-Project -->
             <div
               class="project-card border cursor-pointer rounded-md overflow-hidden shadow-md hover:scale-110 transition-transform duration-300"
               data-title="Footwear"
@@ -177,7 +177,22 @@
                 class="w-full h-auto"
               />
             </div>
+            <!-- Fifth-Project -->
 
+            <div
+              class="project-card border cursor-pointer rounded-md overflow-hidden shadow-md hover:scale-110 transition-transform duration-300"
+              data-title="Caregiver's"
+              data-image="assets/Caregive's-website-screenshot.png"
+              data-description="Caregiver's-Ally is a supportive and user-friendly website designed to connect caregivers with vital resources, emotional support, and community engagement"
+              data-live="https://caregivers-ally.netlify.app/"
+              data-code="https://github.com/OMOTAYO100/Caregiver"
+            >
+              <img
+                src="assets/Caregive's-website-screenshot.png"
+                alt="Caregivers-ally"
+                class="w-full h-auto"
+              />
+            </div>
             <!-- Duplicate this block for more projects -->
           </div>
         </div>
@@ -221,79 +236,82 @@
     </main>
     <!-- ........contact me section...... -->
     <footer id="contact" class="p-6 md:p-16 mt-10">
-        <div class="flex flex-col gap-y-6 place-items-center">
-          <h2 class="text-4xl font-semibold md:text-7xl">Get in touch</h2>
-          <p class="text-[#FFFFFF66] text-center font-[Figtree] md:w-[50%]">
-            Get In touch I'm always interested in hearing about new projects and
-            opportunities. Whether you have a question or just want to say hi,
-            feel free to reach out!
-          </p>
-          <div
-            class="flex gap-4 *:border *:border-[#FFFFFF66] *:px-4 *:py-2 *:rounded-full *:shadow-sm *:shadow-white"
-          >
-            <div class="flex items-center space-x-2 cursor-pointer">
-              <a href="http://linkedin.com/in/osibote-omotayo-6b5419260"
-                >LINKEDIN</a
-              >
-              <figure>
-                <img src="assets/Link.png" alt="" />
-              </figure>
-            </div>
-            <div class="flex items-center space-x-2 cursor-pointer">
-              <a href="https://www.instagram.com/?hl=en&deoia=">INSTAGRAM</a>
-              <figure>
-                <img src="assets/Link.png" alt="" />
-              </figure>
-            </div>
-            <div class="flex items-center space-x-2 cursor-pointer">
-              <a href="https://x.com/100omotayo">X</a>
-              <figure>
-                <img src="assets/Link.png" alt="" />
-              </figure>
-            </div>
-          </div>
-          <div
-            class="flex items-center gap-x-2 border border-[#FFFFFF66] px-4 py-2 rounded-full bg-white text-black shadow-md shadow-white cursor-pointer"
-          >
-            <figure>
-              <img src="assets/mage_message-round.png" alt="" />
-            </figure>
+      <div class="flex flex-col gap-y-6 place-items-center">
+        <h2 class="text-4xl font-semibold md:text-7xl">Get in touch</h2>
+        <p class="text-[#FFFFFF66] text-center font-[Figtree] md:w-[50%]">
+          Get In touch I'm always interested in hearing about new projects and
+          opportunities. Whether you have a question or just want to say hi,
+          feel free to reach out!
+        </p>
+        <div
+          class="flex gap-4 *:border *:border-[#FFFFFF66] *:px-4 *:py-2 *:rounded-full *:shadow-sm *:shadow-white"
+        >
+          <div class="flex items-center space-x-2 cursor-pointer">
             <a href="http://linkedin.com/in/osibote-omotayo-6b5419260"
-              >Send message</a
+              >LINKEDIN</a
             >
+            <figure>
+              <img src="assets/Link.png" alt="" />
+            </figure>
+          </div>
+          <div class="flex items-center space-x-2 cursor-pointer">
+            <a href="https://www.instagram.com/?hl=en&deoia=">INSTAGRAM</a>
+            <figure>
+              <img src="assets/Link.png" alt="" />
+            </figure>
+          </div>
+          <div class="flex items-center space-x-2 cursor-pointer">
+            <a href="https://x.com/100omotayo">X</a>
+            <figure>
+              <img src="assets/Link.png" alt="" />
+            </figure>
           </div>
         </div>
-      </footer>
-<!-- Modal -->
-<div
-  id="projectModal"
-  class="fixed inset-0 z-50 hidden bg-black/50 flex items-center justify-center"
->
-  <div class="bg-white text-black p-8 rounded-md max-w-lg w-full relative">
-    <button onclick="closeModal()" class="absolute top-1 right-2 text-2xl font-bold">
-      &times;
-    </button>
-    <img id="modalImage" src="" class="w-full mb-4 rounded" />
-    <h3 id="modalTitle" class="text-xl font-bold mb-2"></h3>
-    <p id="modalDescription" class="mb-4"></p>
-    <div class="flex gap-4">
-      <a
-        id="Demo"
-        href="#"
-        target="_blank"
-        class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-        >Demo</a
-      >
-      <a
-        id="Code"
-        href="#"
-        target="_blank"
-        class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900"
-        >Code</a
-      >
+        <div
+          class="flex items-center gap-x-2 border border-[#FFFFFF66] px-4 py-2 rounded-full bg-white text-black shadow-md shadow-white cursor-pointer"
+        >
+          <figure>
+            <img src="assets/mage_message-round.png" alt="" />
+          </figure>
+          <a href="http://linkedin.com/in/osibote-omotayo-6b5419260"
+            >Send message</a
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- Modal -->
+    <div
+      id="projectModal"
+      class="fixed inset-0 z-50 hidden bg-black/50 flex items-center justify-center"
+    >
+      <div class="bg-white text-black p-8 rounded-md max-w-lg w-full relative">
+        <button
+          onclick="closeModal()"
+          class="absolute top-1 right-2 text-2xl font-bold"
+        >
+          &times;
+        </button>
+        <img id="modalImage" src="" class="w-full mb-4 rounded" />
+        <h3 id="modalTitle" class="text-xl font-bold mb-2"></h3>
+        <p id="modalDescription" class="mb-4"></p>
+        <div class="flex gap-4">
+          <a
+            id="Demo"
+            href="#"
+            target="_blank"
+            class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+            >Demo</a
+          >
+          <a
+            id="Code"
+            href="#"
+            target="_blank"
+            class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900"
+            >Code</a
+          >
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
     <script src="./app.js"></script>
   </body>
