@@ -1,5 +1,27 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer components{
+  .hamburger.close {
+    @apply before:rotate-45 before:translate-y-1  after:-rotate-45 after:-translate-y-1;
+  }
+}
+
+/* @layer base {
+  body {
+    @apply dark:text-white;
+  }
+
+  a {
+    @apply dark:text-white rounded;
+  }
+
+  img {
+    @apply object-cover rounded h-full;
+  }
+} */
+
 @theme {
   --animate-infinite-typewriter: infiniteTypewriter 6s linear infinite;
   --animate-infinite-type: infiniteType 10s linear infinite;

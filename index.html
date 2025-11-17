@@ -75,27 +75,45 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://omotayo100.netlify.app/" />
   </head>
-  <body class="2xl:max-w-screen-2xl 2xl:mx-auto bg-black text-white">
+  <body
+    class="2xl:max-w-screen-2xl 2xl:mx-auto bg-white text-black dark:bg-black dark:text-slate-300"
+  >
     <header class="p-6 md:p-10">
-      <nav class="md:p-2 flex justify-between items-center">
-        <a
-          class="md:text-lg hover:underline md:animate-infinite-typewriter overflow-hidden whitespace-nowrap"
-          href="index.html"
-          >⚪ OMOTAYO</a
-        >
+      <nav class="p-2 sm:p-4 relative flex justify-between items-center">
+        <div>
+          <a class="md:text-lg hover:underline font-semibold flex items-center gap-1" href="index.html">
+  <span class="w-4 h-4 rounded-full bg-black dark:bg-white inline-block"></span>
+  OMOTAYO
+</a>
 
-        <div class="space-x-1 md:space-x-8">
-          <a class="underline" href="about.html">About me</a>
-          <a
-            class="border px-4 py-2 rounded-full shadow-md shadow-white"
-            href="mycv/OMOTAYO DANIEL O CV^.pdf"
-            >Download CV</a
-          >
         </div>
+
+        <ul
+          class="nav-menu flex flex-col gap-6 fixed top-0 right-0 rounded bg-blue-300 z-30 backdrop-blur-lg p-24 scale-y-0 origin-top transition-transform duration-300 sm:flex-row sm:static sm:bg-transparent sm:p-2 sm:backdrop-blur-0 sm:scale-y-100"
+        >
+          <li class="hover:text-blue-300 hover:scale-110 hover:font-semibold transition-allduration-300"><a href="#home">Home</a></li>
+          <li class="hover:text-blue-300 hover:scale-110 hover:font-semibold transition-allduration-300"><a href="about.html">About</a></li>
+          <li class="hover:text-blue-300 hover:scale-110 hover:font-semibold transition-allduration-300"><a href="#works">Portfolio</a></li>
+          <li class="hover:text-blue-300 hover:scale-110 hover:font-semibold transition-allduration-300"><a href="#contact">Contact</a></li>
+          <li class="sm:hidden hover:text-blue-300 hover:scale-110 hover:font-semibold transition-all duration-300"><a href="mycv/OMOTAYO DANIEL O CV^.pdf">Download CV</a></li>
+        </ul>
+        <ul>
+           <li class="hidden sm:block border border-blue-300 p-2 rounded-2xl hover:text-blue-300 hover:scale-105 hover:font-semibold transition-all duration-300 "><a href="mycv/OMOTAYO DANIEL O CV^.pdf">Download CV</a></li>
+        </ul>
+
+        <div>
+          <input
+            class="cursor-pointer relative appearance-none h-6 w-14 rounded-full bg-[#bbbcdc] duration-500 before:absolute before:h-6 before:w-6 before:bg-[#221529] before:rounded-full before:scale-110 checked:before:translate-x-8 before:duration-300 checked:before:bg-slate-300 checked:bg-slate-900"
+            type="checkbox"
+          />
+        </div>
+        <div
+          class="hamburger sm:hidden fixed bg-blue-500 dark:bg-slate-700 py-5 top-[30px] left-1/2 -translate-x-1/2 sm:left-0 sm:translate-x-0 h-8 w-12 z-30 rounded cursor-pointer before:content-[''] before:h-0.5 before:w-2/3 before:bg-white before:absolute before:top-4 before:left-2 after:content-[''] after:h-0.5 after:w-2/3 after:bg-white after:absolute after:top-6 after:left-2"
+        ></div>
       </nav>
       <!-- ..........Hero Section........ -->
       <section
-        class="w-full md:w-[95%] md:mx-auto lg:w-[100%] bg-[#ffffff14] p-6 md:p-16 mt-45 md:mt-18 rounded-2xl relative"
+        class="w-full md:w-[95%] md:mx-auto lg:w-[100%] bg-blue-300 dark:bg-[#ffffff14] p-6 md:p-16 mt-45 md:mt-18 rounded-2xl relative"
       >
         <div class="flex justify-between items-center">
           <div class="space-y-6">
@@ -122,18 +140,31 @@
 
     <main>
       <!-- .........Aboutme section....... -->
-      <section id="about" class=" fade-in p-6 md:p-16">
+      <section id="about" class="fade-in p-6 md:p-16">
         <div class="flex justify-between items-center relative">
-          <p class="md:w-[45%] text-[#FFFFFF66] font-[Figtree] *:text-white">
-            Hello! I'm <span>Omotayo</span>, a
-            <span>frontend developer</span> from
-            <span> Lagos, Nigeria. </span> where tech innovation meets vibrant
-            culture. With a deep passion for crafting engaging web experiences,
-            I specialize in bringing designs to life through
-            <span> HTML, CSS, JavaScript and React.</span>
+          <p class="md:w-[45%] text-black dark:text-[#FFFFFF66] font-[Figtree">
+            Hello! I'm
+            <span class="text-blue-300 dark:text-white">Omotayo</span>, a
+            <span class="text-blue-300 dark:text-white"
+              >frontend developer</span
+            >
+            from
+            <span class="text-blue-300 dark:text-white"> Lagos, Nigeria. </span>
+            where tech innovation meets vibrant culture. With a deep passion for
+            crafting engaging web experiences, I specialize in bringing designs
+            to life through
+            <span class="text-blue-300 dark:text-white">
+              HTML, CSS, JavaScript and React.</span
+            >
           </p>
-          <figure class="fade-in absolute left-1/2 top-45 sm:top-0 -translate-x-1">
-            <img src="assets/Line 2.png" alt="line-2" />
+          <figure
+            class="fade-in absolute left-1/2 top-45 sm:top-0 -translate-x-1"
+          >
+            <img
+              class="filter invert dark:invert-0"
+              src="assets/Line 2.png"
+              alt="line-2"
+            />
           </figure>
           <div class="space-y-2 hidden md:block">
             <div class="fade-in hover:scale-110">
@@ -150,7 +181,10 @@
       </section>
 
       <!-- .........Portfolio Section........ -->
-      <section id="works" class="fade-in section-trigger p-6 md:p-16 mt-38 md:mt-10">
+      <section
+        id="works"
+        class="fade-in section-trigger p-6 md:p-16 mt-38 md:mt-10"
+      >
         <div class="space-y-4 order-1">
           <h1 class="fade-in text-4xl font-bold">Works</h1>
           <div
@@ -166,16 +200,19 @@
                   <p class="text-sm text-white">October-2025</p>
                 </div>
               </div>
-             <p class="fade-in md:w-[50%] text-[#FFFFFF66] font-[Figtree]">
-      This solar energy website showcases a clean, modern interface built with 
-      HTML, Tailwind CSS, and React. It features dynamic components powered by 
-      React Hooks, smooth page transitions using <span class="font-semibold">React Router DOM</span>, 
-      and a fully responsive design optimized for performance and user experience. 
-      The project highlights essential solar solutions, services, and product details 
-      in a visually appealing and accessible layout.
-    </p>
+              <p
+                class="fade-in md:w-[50%] text-black dark:text-[#FFFFFF66] font-[Figtree]"
+              >
+                This solar energy website showcases a clean, modern interface
+                built with HTML, Tailwind CSS, and React. It features dynamic
+                components powered by React Hooks, smooth page transitions using
+                <span class="font-semibold">React Router DOM</span>, and a fully
+                responsive design optimized for performance and user experience.
+                The project highlights essential solar solutions, services, and
+                product details in a visually appealing and accessible layout.
+              </p>
               <div
-                class="fade-in *:p-2 *:bg-[#141747] *:text-[#FFFFFF66] *:rounded-lg flex flex-wrap gap-2"
+                class="fade-in *:p-2 *:bg-blue-300 dark:*:bg-[#141747] dark:*:text-[#FFFFFF66] *:rounded-lg flex flex-wrap gap-2"
               >
                 <a class="fade-in" href="#">HTML</a>
                 <a class="fade-in" href="#">Tailwind</a>
@@ -183,23 +220,25 @@
                 <a class="fade-in" href="#">React</a>
               </div>
               <div
-                class="fade-in flex items-center space-x-2 *:hover:bg-[#141747] *:hover:text-[#FFFFFF66]"
+                class="fade-in flex items-center space-x-2 *:text-white *:bg-black *:hover:bg-[#141747] *:hover:text-[#FFFFFF66]"
               >
                 <div
                   class="fade-in flex items-center space-x-2 border-2 border-[#FFFFFF66] p-2 rounded"
                 >
                   <figure>
-                    <img src="assets/export.png" alt="" />
+                    <img class="" src="assets/export.png" alt="" />
                   </figure>
                   <a href="https://shinypowersolution.netlify.app/">DEMO</a>
                 </div>
                 <div
-                  class=" fade-in flex items-center space-x-2 border-2 p-2 rounded border-gray-500"
+                  class="fade-in flex items-center space-x-2 border-2 p-2 rounded border-gray-500"
                 >
                   <figure>
-                    <img src="assets/iconoir_github.png" alt="" />
+                    <img class="" src="assets/iconoir_github.png" alt="" />
                   </figure>
-                  <a href="https://github.com/OMOTAYO100/shinypowersolution">CODE</a>
+                  <a href="https://github.com/OMOTAYO100/shinypowersolution"
+                    >CODE</a
+                  >
                 </div>
               </div>
             </div>
@@ -210,7 +249,7 @@
               class="fade-in w-full sm:w-[380px] h-full sm:h-[250px] justify-center sm:absolute sm:bottom-7 sm:right-30 border-2 rounded-2xl sm:-rotate-15"
             >
               <div
-                class="w-full h-full rounded-xl overflow-hidden shadow-lg bg-white"
+                class="w-full h-full rounded-xl overflow-hidden shadow-lg bg-black dark:bg-white"
               >
                 <img
                   src="./assets/Screenshot 2025-11-17 003844.png"
@@ -225,11 +264,14 @@
       </section>
 
       <div class="w-[90%] mx-auto">
-        <hr class="border-white animate-slide-right" />
+        <hr class="border-white animate-slide-right filter invert dark:invert-0" />
       </div>
 
       <!-- .........Photographer Section........ -->
-      <section id="Photographer" class="fade-in section-trigger p-6 md:p-16 md:mt-10">
+      <section
+        id="Photographer"
+        class="fade-in section-trigger p-6 md:p-16 md:mt-10"
+      >
         <div
           class="group relative grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6"
         >
@@ -237,19 +279,23 @@
             <div
               class="flex flex-col md:flex-row md:justify-between md:items-start space-y-3"
             >
-              <h2 class=" fade-in text-2xl font-bold">Photography Website</h2>
+              <h2 class="fade-in text-2xl font-bold">Photography Website</h2>
 
               <div class="md:hidden">
                 <p class="fade-in text-sm text-white">May-2025</p>
               </div>
             </div>
-            <p class="fade-in md:w-[50%] text-[#FFFFFF66] font-[Figtree]">
+            <p
+              class="fade-in md:w-[50%] text-black dark:text-[#FFFFFF66] font-[Figtree]"
+            >
               I designed and developed a responsive, modern photography website
               tailored for a professional photographer aiming to showcase their
               portfolio, attract clients, and establish a strong digital
               presence.
             </p>
-            <p class="fade-in md:w-[50%] text-[#FFFFFF66] font-[Figtree]">
+            <p
+              class="fade-in md:w-[50%] text-black dark:text-[#FFFFFF66] font-[Figtree]"
+            >
               The website combines visual storytelling with a clean,
               user-friendly layout that highlights the photographer's work in an
               engaging and accessible way. From the dynamic homepage to the
@@ -257,20 +303,20 @@
               crafted to reflect the brand's personality and professionalism.
             </p>
             <div
-              class="*:p-2 *:bg-[#141747] *:text-[#FFFFFF66] *:rounded-lg flex flex-wrap gap-2"
+              class="*:p-2 *:bg-blue-300 dark:*:bg-[#141747] dark:*:text-[#FFFFFF66] *:rounded-lg flex flex-wrap gap-2"
             >
               <a class="fade-in" href="#">HTML</a>
               <a class="fade-in" href="#">Tailwind</a>
               <a class="fade-in" href="#">JavaScript</a>
             </div>
             <div
-              class="flex items-center space-x-2 *:hover:bg-[#141747] *:hover:text-[#FFFFFF66]"
+              class="flex items-center space-x-2 *:text-white *:bg-black *:hover:bg-[#141747] *:hover:text-[#FFFFFF66]]"
             >
               <div
-                class=" fade-in flex items-center space-x-2 border-2 border-[#FFFFFF66] p-2 rounded"
+                class="fade-in flex items-center space-x-2 border-2 border-[#FFFFFF66] p-2 rounded"
               >
                 <figure>
-                  <img src="assets/export.png" alt="demo-icon" />
+                  <img class="" src="assets/export.png" alt="demo-icon" />
                 </figure>
                 <a href="https://piuss.netlify.app/">DEMO</a>
               </div>
@@ -278,7 +324,11 @@
                 class="fade-in flex items-center space-x-2 border-2 p-2 rounded border-[#FFFFFF66]"
               >
                 <figure>
-                  <img src="assets/iconoir_github.png" alt="code-icon" />
+                  <img
+                    class=""
+                    src="assets/iconoir_github.png"
+                    alt="code-icon"
+                  />
                 </figure>
                 <a href="https://github.com/OMOTAYO100/photography-pius"
                   >CODE</a
@@ -293,7 +343,7 @@
             class="fade-in w-full sm:w-[380px] h-full sm:h-[250px] justify-center sm:absolute sm:bottom-7 sm:right-30 border-2 rounded-2xl sm:-rotate-15"
           >
             <div
-              class="w-full h-full rounded-xl overflow-hidden shadow-lg bg-white"
+              class="w-full h-full rounded-xl overflow-hidden shadow-lg bg-black dark:bg-white"
             >
               <img
                 src="./assets/thumbnail.jpg"
@@ -306,7 +356,7 @@
         </div>
       </section>
       <div class="w-[90%] mx-auto">
-        <hr class="border-white animate-slide-right" />
+        <hr class="border-white animate-slide-right filter invert dark:invert-0" />
       </div>
 
       <!-- .........Finance Section........ -->
@@ -318,13 +368,17 @@
             <div
               class="flex flex-col md:flex-row md:justify-between md:items-start space-y-3"
             >
-              <h2 class="fade-in text-2xl font-bold">Future Funds Alliance (FFA)</h2>
+              <h2 class="fade-in text-2xl font-bold">
+                Future Funds Alliance (FFA)
+              </h2>
 
               <div class="md:hidden">
                 <p class="fade-in text-sm text-white">Jan-2025</p>
               </div>
             </div>
-            <p class="fade-in md:w-[50%] text-[#FFFFFF66] font-[Figtree]">
+            <p
+              class="fade-in md:w-[50%] text-black dark:text-[#FFFFFF66] font-[Figtree]"
+            >
               I designed and developed a sleek, responsive finance website for
               Future Funds Alliance (FFA), a modern platform that helps users
               manage and track their finances with clarity and ease. The site
@@ -337,20 +391,20 @@
             </p>
 
             <div
-              class="*:p-2 *:bg-[#141747] *:text-[#FFFFFF66] *:rounded-lg flex flex-wrap gap-2"
+              class="*:p-2 *:bg-blue-300 dark:*:bg-[#141747] dark:*:text-[#FFFFFF66] *:rounded-lg flex flex-wrap gap-2"
             >
               <a class="fade-in" href="#">HTML</a>
               <a class="fade-in" href="#">Tailwind</a>
               <a class="fade-in" href="#">JavaScript</a>
             </div>
             <div
-              class="flex items-center space-x-2 *:hover:bg-[#141747] *:hover:text-[#FFFFFF66]"
+              class="flex items-center space-x-2 *:text-white *:bg-black *:hover:bg-[#141747] *:hover:text-[#FFFFFF66]"
             >
               <div
                 class="fade-in flex items-center space-x-2 border-2 border-gray-500 p-2 rounded"
               >
                 <figure>
-                  <img src="assets/export.png" alt="demo-icon" />
+                  <img class="" src="assets/export.png" alt="demo-icon" />
                 </figure>
                 <a href="https://ffa-finance.netlify.app/">DEMO</a>
               </div>
@@ -358,7 +412,11 @@
                 class="fade-in flex items-center space-x-2 border-2 p-2 rounded border-[#FFFFFF66]"
               >
                 <figure>
-                  <img src="assets/iconoir_github.png" alt="code-icon" />
+                  <img
+                    class=""
+                    src="assets/iconoir_github.png"
+                    alt="code-icon"
+                  />
                 </figure>
                 <a href="https://github.com/OMOTAYO100/FFA">CODE</a>
               </div>
@@ -371,7 +429,7 @@
             class="fade-in w-full sm:w-[380px] h-full sm:h-[250px] justify-center sm:absolute sm:bottom-7 sm:right-30 border-2 rounded-2xl sm:-rotate-15"
           >
             <div
-              class="w-full h-full rounded-xl overflow-hidden shadow-lg bg-white"
+              class="w-full h-full rounded-xl overflow-hidden shadow-lg bg-black dark:bg-white"
             >
               <img
                 src="./assets/Finace-website-screenshot.png"
@@ -384,7 +442,7 @@
         </div>
       </section>
       <div class="w-[90%] mx-auto">
-        <hr class="border-white animate-slide-right" />
+        <hr class="border-white animate-slide-right filter invert dark:invert-0" />
       </div>
 
       <!-- .........Landing page Section........ -->
@@ -402,7 +460,9 @@
                 <p class="fade-in text-sm text-white">April-2024</p>
               </div>
             </div>
-            <p class="fade-in md:w-[50%] text-[#FFFFFF66] font-[Figtree]">
+            <p
+              class="fade-in md:w-[50%] text-black dark:text-[#FFFFFF66] font-[Figtree]"
+            >
               I designed a clean and responsive landing page that effectively
               captures attention with bold typography, smooth animations, and a
               clear call to action. The layout adapts seamlessly across all
@@ -412,20 +472,20 @@
             </p>
 
             <div
-              class="*:p-2 *:bg-[#141747] *:text-[#FFFFFF66] *:rounded-lg flex flex-wrap gap-2"
+              class="*:p-2 *:bg-blue-300 dark:*:bg-[#141747] dark:*:text-[#FFFFFF66] *:rounded-lg flex flex-wrap gap-2"
             >
               <a class="fade-in" href="#">HTML</a>
               <a class="fade-in" href="#">Tailwind</a>
               <a class="fade-in" href="#">JavaScript</a>
             </div>
             <div
-              class="flex items-center space-x-2 *:hover:bg-[#141747] *:hover:text-[#FFFFFF66]"
+              class="flex items-center space-x-2 *:text-white *:bg-black *:hover:bg-[#141747] *:hover:text-[#FFFFFF66]"
             >
               <div
-                class=" fade-in flex items-center space-x-2 border-2 border-[#FFFFFF66] p-2 rounded"
+                class="fade-in flex items-center space-x-2 border-2 border-[#FFFFFF66] p-2 rounded"
               >
                 <figure>
-                  <img src="assets/export.png" alt="demo-icon" />
+                  <img class="" src="assets/export.png" alt="demo-icon" />
                 </figure>
                 <a href="#">DEMO</a>
               </div>
@@ -433,7 +493,11 @@
                 class="fade-in flex items-center space-x-2 border-2 p-2 rounded border-[#FFFFFF66]"
               >
                 <figure>
-                  <img src="assets/iconoir_github.png" alt="code-icon" />
+                  <img
+                    class=""
+                    src="assets/iconoir_github.png"
+                    alt="code-icon"
+                  />
                 </figure>
                 <a href="#">CODE</a>
               </div>
@@ -446,7 +510,7 @@
             class="fade-in w-full sm:w-[380px] h-full sm:h-[250px] justify-center sm:absolute sm:bottom-7 sm:right-30 border-2 rounded-2xl sm:-rotate-15"
           >
             <div
-              class="w-full h-full rounded-xl overflow-hidden shadow-lg bg-white"
+              class="w-full h-full rounded-xl overflow-hidden shadow-lg bg-black dark:bg-white"
             >
               <img
                 src="./assets/Sneakers-wesite-screenshot.png"
@@ -458,22 +522,24 @@
           </div>
         </div>
       </section>
-      <div class="w-[90%] mx-auto border-white animate-wiggle">
-        <hr />
+      <div class="w-[90%] mx-auto border-white animate-wiggle filter invert dark:invert-0">
+        <hr class="filter invert dark:invert-0"/>
       </div>
     </main>
 
     <!-- ..........Contact Section........  -->
-    <footer id="contact" class=" fade-in p-6 md:p-16 mt-10">
+    <footer id="contact" class="fade-in p-6 md:p-16 mt-10">
       <div class="flex flex-col gap-y-6 place-items-center">
         <h2 class="fade-in text-4xl font-semibold md:text-7xl">Get in touch</h2>
-        <p class="fade-in text-[#FFFFFF66] text-center font-[Figtree] md:w-[50%]">
+        <p
+          class="fade-in text-black dark:text-[#FFFFFF66] text-center font-[Figtree] md:w-[50%]"
+        >
           Get In touch I'm always interested in hearing about new projects and
           opportunities. Whether you have a question or just want to say hi,
           feel free to reach out!
         </p>
         <div
-          class="flex gap-4 *:border *:border-[#FFFFFF66] *:px-4 *:py-2 *:rounded-full *:shadow-sm *:shadow-white"
+          class="flex gap-4 *:border *:bg-black text-white  dark:text-white *:border-[#FFFFFF66] *:px-4 *:py-2 *:rounded-full shadow-black *:shadow-sm dark:*:shadow-white"
         >
           <div
             class="fade-in flex items-center space-x-2 cursor-pointer hover:text-gray-500 hover:scale-105"
@@ -503,7 +569,7 @@
           </div>
         </div>
         <div
-          class="fade-in flex items-center gap-x-2 border border-[#FFFFFF66] px-4 py-2 rounded-full bg-white text-black shadow-md shadow-white cursor-pointer hover:text-gray-500 hover:scale-105"
+          class="fade-in flex items-center gap-x-2 border border-black dark:border-[#FFFFFF66] px-4 py-2 rounded-full bg-white text-black shadow-md shadow-white cursor-pointer hover:text-gray-500 hover:scale-105"
         >
           <figure>
             <img src="assets/mage_message-round.png" alt="message-icon" />

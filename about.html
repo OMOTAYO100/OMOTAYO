@@ -7,26 +7,43 @@
     <link rel="stylesheet" href="./src/output.css" />
     <script src="./app.js" defer></script>
   </head>
-  <body class="2xl:max-w-screen-2xl 2xl:mx-auto bg-black text-white">
+  <body class="2xl:max-w-screen-2xl 2xl:mx-auto bg-white text-black dark:bg-black dark:text-slate-300">
     <header class="p-6 md:p-10">
-      <nav class="md:p-2 flex justify-between">
-        <a
-          class="md:text-lg hover:underline md:animate-infinite-typewriter overflow-hidden whitespace-nowrap"
-          href="index.html"
-          >⚪ OMOTAYO</a
-        >
+      <nav class="p-2 sm:p-4 relative flex justify-between items-center">
+        <div>
+          <a class="md:text-lg hover:underline font-semibold flex items-center gap-1" href="index.html">
+  <span class="w-4 h-4 rounded-full bg-black dark:bg-white inline-block"></span>
+  OMOTAYO
+</a>
 
-        <div class="space-x-1 md:space-x-8">
-          <a class="underline" href="#contact">Contact me</a>
-          <a
-            class="border px-4 py-2 rounded-full shadow-md shadow-white"
-            href="mycv/OMOTAYO DANIEL O CV^.pdf"
-            >Download CV</a
-          >
         </div>
-      </nav>
 
-      <section class="fade-in mt-10 space-x-12">
+        <ul
+          class="nav-menu flex flex-col gap-6 fixed top-0 right-0 rounded bg-blue-300 z-30 backdrop-blur-lg p-24 scale-y-0 origin-top transition-transform duration-300 sm:flex-row sm:static sm:bg-transparent sm:p-2 sm:backdrop-blur-0 sm:scale-y-100"
+        >
+          <li class="hover:text-blue-300 hover:scale-110 hover:font-semibold transition-allduration-300"><a href="index.html">Home</a></li>
+          <li class="hover:text-blue-300 hover:scale-110 hover:font-semibold transition-allduration-300"><a href="about.html">About</a></li>
+          <li class="hover:text-blue-300 hover:scale-110 hover:font-semibold transition-allduration-300"><a href="#works">Portfolio</a></li>
+          <li class="hover:text-blue-300 hover:scale-110 hover:font-semibold transition-allduration-300"><a href="#contact">Contact</a></li>
+          <li class="sm:hidden hover:text-blue-300 hover:scale-110 hover:font-semibold transition-all duration-300"><a href="mycv/OMOTAYO DANIEL O CV^.pdf">Download CV</a></li>
+        </ul>
+        <ul>
+           <li class="hidden sm:block border border-blue-300 p-2 rounded-2xl hover:text-blue-300 hover:scale-105 hover:font-semibold transition-all duration-300 "><a href="mycv/OMOTAYO DANIEL O CV^.pdf">Download CV</a></li>
+        </ul>
+
+        <div>
+          <input
+            class="cursor-pointer relative appearance-none h-6 w-14 rounded-full bg-[#bbbcdc] duration-500 before:absolute before:h-6 before:w-6 before:bg-[#221529] before:rounded-full before:scale-110 checked:before:translate-x-8 before:duration-300 checked:before:bg-slate-300 checked:bg-slate-900"
+            type="checkbox"
+          />
+        </div>
+        <div
+          class="hamburger sm:hidden fixed bg-blue-500 dark:bg-slate-700 py-5 top-[30px] left-1/2 -translate-x-1/2 sm:left-0 sm:translate-x-0 h-8 w-12 z-30 rounded cursor-pointer before:content-[''] before:h-0.5 before:w-2/3 before:bg-white before:absolute before:top-4 before:left-2 after:content-[''] after:h-0.5 after:w-2/3 after:bg-white after:absolute after:top-6 after:left-2"
+        ></div>
+      </nav>
+    </header>
+
+      <section id="about" class="p-6 md:10 fade-in mt-10 space-x-12">
         <div class="flex flex-col md:flex-row">
           <div class="flex flex-col md:items-start">
             <figure class="fade-in size-30 relative">
@@ -34,7 +51,7 @@
             </figure>
             <figure class="hidden md:block relative left-15">
               <img
-                class="fade-in h-[170%]"
+                class="fade-in h-[170%] filter invert dark:invert-0"
                 src="assets/Line 3.png"
                 alt="line-3"
                 loading="lazy"
@@ -46,33 +63,33 @@
               Let me tell you a little bit about me
             </h2>
 
-            <p class="fade-in text-[#FFFFFF66] *:text-white">
+            <p class="fade-in text-black dark:text-[#FFFFFF66]">
               Hello. I'm Omotayo a talented frontend developer from Lagos,
               Nigeria with a strong command of
-              <span>HTML, CSS, and JavaScript</span>, the foundational building
+              <span class="text-blue-300 dark:text-[#FFFFFF66]">HTML, CSS, and JavaScript</span>, the foundational building
               blocks of web development. i'm Passionate about creating visually
               appealing and user-friendly interfaces, I specializes in
               translating ideas and designs into functional, interactive web
               experiences.
             </p>
             <h2 class="fade-in text-2xl font-semibold">Key Skills:</h2>
-            <ul class="fade-in list-disc text-[#FFFFFF66] pl-4 space-y-4">
-              <li class="fade-in *:text-white *:text-lg">
-                <span>HTML</span> : I craft well-structured and semantic markup
+            <ul class="fade-in list-disc text-black dark:text-[#FFFFFF66] pl-4 space-y-4">
+              <li class="fade-in *:text-lg">
+                <span class="text-blue-300 dark:text-[#FFFFFF66]">HTML</span> : I craft well-structured and semantic markup
                 to ensure accessible and SEO-friendly web pages.
               </li>
-              <li class="fade-in *:text-white *:text-lg">
-                <span>Tailwind CSS</span> : I design responsive layouts, styling
+              <li class="fade-in text-black dark:text-[#FFFFFF66] *:text-lg">
+                <span class="text-blue-300 dark:text-[#FFFFFF66]">Tailwind CSS</span> : I design responsive layouts, styling
                 components, and implementing animations to bring websites to
                 life.
               </li>
-              <li class="fade-in *:text-white *:text-lg">
-                <span>JavaScript</span> : Also i bring about interactivity and
+              <li class="fade-in text-black dark:text-[#FFFFFF66] *:text-lg">
+                <span class="text-blue-300 dark:text-[#FFFFFF66]">JavaScript</span> : Also i bring about interactivity and
                 functionality, such as dynamic forms, navigation menus, and
                 engaging user interactions.
               </li>
-              <li class="fade-in *:text-white *:text-lg">
-                <span>React</span> : I have hands-on experience with React,
+              <li class="fade-in text-black dark:text-[#FFFFFF66] *:text-lg">
+                <span class="text-blue-300 dark:text-[#FFFFFF66]">React</span> : I have hands-on experience with React,
                 building responsive and interactive user interfaces using
                 components, hooks, and state management. I'm comfortable working
                 with JSX, props, conditional rendering, and integrating APIs to
@@ -80,7 +97,7 @@
               </li>
             </ul>
 
-            <p class="fade-in text-[#FFFFFF66]">
+            <p class="fade-in text-black dark:text-[#FFFFFF66]">
               I stay updated on the latest frontend trends and best practices,
               ensuring the delivery of modern and scalable web solutions.
               Whether working independently or as part of a collaborative team,
@@ -91,13 +108,13 @@
               across devices.
             </p>
 
-            <p class="fade-in text-[#FFFFFF66]">
+            <p class="fade-in text-black dark:text-[#FFFFFF66]">
               I'm passionate about building exceptional web experiences and
               currently open to new opportunities. Whether you have an exciting
               project in mind, need help with frontend development, or want to
               discuss potential collaborations, I'd love to hear from you. Let's
               create something amazing together! 📧 Contact me at :
-              <span class="text-white hover:underline"
+              <span class="text-blue-300 dark:text-[#FFFFFF66] hover:underline"
                 ><a href="mailto:oshiboteomotayo100@gmail.com"></a
                 >oshiboteomotayo100@gmail.com</span
               >
@@ -109,19 +126,18 @@
           </div>
         </div>
       </section>
-    </header>
     <main>
       <!-- .........My work section........ -->
 
-      <section class="fade-in p-6 md:p-10">
-        <div class="w-[90%] mx-auto">
+      <section id="works" class="fade-in p-6 md:p-10">
+        <div class="w-full mx-auto">
           <div
             class="flex items-center space-x-2 rounded-full border px-4 py-2 justify-self-start"
           >
             <h2 class="fade-in text-md">View My Works</h2>
             <figure>
               <img
-                class="w-10"
+                class="w-10 filter invert dark:invert-0"
                 src="assets/Line 4.png"
                 alt="line-4"
                 loading="lazy"
@@ -222,21 +238,7 @@
                 class="w-full h-auto"
               />
             </div>
-            <!-- Seventh project -->
-            <div
-              class="fade-in project-card border cursor-pointer rounded-md overflow-hidden shadow-md hover:scale-110 transition-transform duration-300"
-              data-title="Alpha-burn"
-              data-image="assets/Screenshot 2025-08-29 094459.png"
-              data-description="Alpha-burn is a cutting-edge fitness platform that offers personalized workout plans, nutrition tracking, and community support to help users achieve their health goals."
-              data-live="https://alpha-burn-gym.netlify.app/"
-              data-code="https://github.com/OMOTAYO100/alpha-burn-gym"
-            >
-              <img
-                src="assets/Screenshot 2025-08-29 094459.png"
-                alt="Alpha-burn"
-                class="w-full h-auto"
-              />
-            </div>
+           
             <!-- Duplicate this block for more projects -->
           </div>
         </div>
@@ -277,18 +279,25 @@
           </div>
         </div>
       </div>
+
+       <div class="w-[90%] mx-auto border-white animate-wiggle filter invert dark:invert-0">
+        <hr class="filter invert dark:invert-0"/>
+      </div>
+    </main>
     </main>
     <!-- ........contact me section...... -->
     <footer id="contact" class="fade-in p-6 md:p-16 mt-10">
       <div class="flex flex-col gap-y-6 place-items-center">
         <h2 class="fade-in text-4xl font-semibold md:text-7xl">Get in touch</h2>
-        <p class="fade-in text-[#FFFFFF66] text-center font-[Figtree] md:w-[50%]">
+        <p
+          class="fade-in text-black dark:text-[#FFFFFF66] text-center font-[Figtree] md:w-[50%]"
+        >
           Get In touch I'm always interested in hearing about new projects and
           opportunities. Whether you have a question or just want to say hi,
           feel free to reach out!
         </p>
         <div
-          class="flex gap-4 *:border *:border-[#FFFFFF66] *:px-4 *:py-2 *:rounded-full *:shadow-sm *:shadow-white"
+          class="flex gap-4 *:border *:bg-black text-white  dark:text-white *:border-[#FFFFFF66] *:px-4 *:py-2 *:rounded-full shadow-black *:shadow-sm dark:*:shadow-white"
         >
           <div
             class="fade-in flex items-center space-x-2 cursor-pointer hover:text-gray-500 hover:scale-105"
@@ -318,7 +327,7 @@
           </div>
         </div>
         <div
-          class="fade-in flex items-center gap-x-2 border border-[#FFFFFF66] px-4 py-2 rounded-full bg-white text-black shadow-md shadow-white cursor-pointer hover:text-gray-500 hover:scale-105"
+          class="fade-in flex items-center gap-x-2 border border-black dark:border-[#FFFFFF66] px-4 py-2 rounded-full bg-white text-black shadow-md shadow-white cursor-pointer hover:text-gray-500 hover:scale-105"
         >
           <figure>
             <img src="assets/mage_message-round.png" alt="message-icon" />

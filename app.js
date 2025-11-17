@@ -35,3 +35,25 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 document.querySelectorAll(".fade-in").forEach((el) => observer.observe(el));
+
+let checkBox = document.querySelector("input[type='checkbox']");
+
+checkBox.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+});
+
+const hamburger = document.querySelector('.hamburger');
+const navmenu = document.querySelector('.nav-menu');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('close');
+
+  // Toggle the menu scale
+  if (navmenu.classList.contains('scale-y-0')) {
+    navmenu.classList.remove('scale-y-0');
+    navmenu.classList.add('scale-y-100');
+  } else {
+    navmenu.classList.remove('scale-y-100');
+    navmenu.classList.add('scale-y-0');
+  }
+});
